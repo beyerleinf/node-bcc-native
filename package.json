@@ -26,5 +26,13 @@
   "devDependencies": {
     "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
     "node-pre-gyp-github": "^1.4.3"
+  },
+  "binary": {
+    "module_name": "index",
+    "host": "https://github.com/beyerleinf/node-bcc-native/releases/download/",
+    "remote_path": "{version}",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "module_path": "./native",
+    "pkg_path": "."
   }
 }
