@@ -1,12 +1,15 @@
 {
   "name": "node-bcc-native",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Native (Rust) implementation of beyerleinf/node-bcc",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beyerleinf/node-bcc-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beyerleinf/node-bcc-native/issues"
   },
   "files": [
     "/lib",
@@ -15,7 +18,9 @@
   "author": "Fabian Beyerlein <mail@fabian-b.de>",
   "license": "MIT",
   "dependencies": {
-    "neon-cli": "^0.2.0"
+    "neon-cli": "^0.2.0",
+    "node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
+    "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
@@ -23,10 +28,7 @@
     "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
     "build": "neon build --release"
   },
-  "devDependencies": {
-    "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
-    "node-pre-gyp-github": "^1.4.3"
-  },
+  "devDependencies": {},
   "binary": {
     "module_name": "index",
     "host": "https://github.com/beyerleinf/node-bcc-native/releases/download/",
