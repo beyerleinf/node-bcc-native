@@ -13,7 +13,7 @@
   },
   "files": [
     "/lib",
-    "/natives/index.node"
+    "/native/index.node"
   ],
   "author": "Fabian Beyerlein <mail@fabian-b.de>",
   "license": "MIT",
