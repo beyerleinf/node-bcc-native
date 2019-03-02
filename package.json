@@ -18,8 +18,8 @@
   "author": "Fabian Beyerlein <mail@fabian-b.de>",
   "license": "MIT",
   "dependencies": {
+    "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
     "neon-cli": "^0.2.0",
-    "node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
     "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
