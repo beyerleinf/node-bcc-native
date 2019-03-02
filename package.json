@@ -1,6 +1,6 @@
 {
   "name": "node-bcc-native",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Native (Rust) implementation of beyerleinf/node-bcc",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
