@@ -1,17 +1,18 @@
 [package]
 name = "node-bcc-native"
 version = "0.1.0"
-authors = ["Fabian Beyerlein <mail@fabian-b.de>"]
-license = "MIT"
+authors = ["Fabian Beyerlein <dev@beyerleinf.de>"]
+license = "ISC"
 build = "build.rs"
+edition = "2018"
 exclude = ["artifacts.json", "index.node"]
 
 [lib]
 name = "node_bcc_native"
-crate-type = ["dylib"]
+crate-type = ["cdylib"]
 
 [build-dependencies]
-neon-build = "0.2.0"
+neon-build = "0.4.0"
 
 [dependencies]
-neon = "0.2.0"
+neon = "0.4.0"
